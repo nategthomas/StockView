@@ -2,7 +2,7 @@ import { Component, OnInit} from '@angular/core';
 import {FormGroup, FormControl, Validators} from "@angular/forms";
 
 import {StockService} from "./stock.service";
-
+import {Stock} from "./stock.model";
 
 @Component({
   selector: 'app-stock',
@@ -12,13 +12,27 @@ import {StockService} from "./stock.service";
   `]
 })
 
-export class StockComponent {
+export class StockComponent implements OnInit {
   constructor(private stockService: StockService) {}
+
+  stocks: Stock[] = [];
+  stock: Stock;
+
+  ngOnInit() {
+    this.stockService.getStocks()
+    .subscribe((stocks: Stock[]) => {
+      this.stocks = stocks;
+    })
+
+  }
 
   getaStock(stock) {
     this.stockService.getStock(stock)
-    .subscribe((stock: any) => {
-      console.log(stock.dataset);
+    .subscribe((stock: Stock) => {
+      this.stockService.addStock(stock)
+      .subscribe((addedStock: Stock) => {
+        this.stocks.unshift(addedStock);
+      })
     })
   }
 

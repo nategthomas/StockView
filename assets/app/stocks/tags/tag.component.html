@@ -1,0 +1,9 @@
+<div class="row">
+  <div [hidden]="!stock" class="col-sm-8 col-xs-8 box">
+    <div id="head">
+      <h2 id="code">{{stock?.name}} - {{stock?.today}}</h2>
+      <a (click)='deleteStock()' class=close-thik></a>
+    </div>
+    <span>{{stock?.desc}}</span>
+  </div>
+</div>

@@ -1,0 +1,41 @@
+.box {
+  box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 6px, rgba(0, 0, 0, 0.12) 0px 1px 4px;
+  min-width: 190px;
+  padding: 0px;
+  margin: 15px;
+}
+
+#head {
+  display: inline-block;
+  width: 100%;
+  background-color: #e7e7e7;
+  float: left;
+
+}
+#head h2 {
+  margin: 6px 6px;
+  float: left;
+}
+
+span {
+  float: left;
+  margin: 20px 10px;
+
+}
+[class*='close-'] {
+  color: #777;
+  font-size: 1.1em;
+  font: 14px/100% arial, sans-serif;
+  position: absolute;
+  right: 7px;
+  text-decoration: none;
+  text-shadow: 0 1px 0 #fff;
+  top: 7px;
+}
+
+.close-thik:after {
+  content: '✖'; /* UTF-8 symbol */
+  font-size: 1.37em;
+  font-weight: bold;
+  cursor: pointer;
+}
