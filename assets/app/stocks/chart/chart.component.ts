@@ -28,7 +28,7 @@ export class ChartyComponent implements OnInit {
         console.log(Series)
       })
       this.options = {
-        title : { text : 'hello' },
+        title : { text : 'Stock View' },
         series : Series,
         xAxis: {
           type: 'datetime',
@@ -40,8 +40,6 @@ export class ChartyComponent implements OnInit {
     })
   }
   options: Object;
-
-    // this.options.series[0].data = stocks[0].data;
 
 
   ngOnInit(){

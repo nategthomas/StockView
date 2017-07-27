@@ -5,7 +5,7 @@ import {FormGroup, FormControl, Validators} from "@angular/forms";
 
 @Component({
   selector: 'app-header',
-  templateUrl: `
+  template: `
   <nav class="navbar navbar-inverse">
     <div class="container-fluid">
       <div class="navbar-header">
@@ -31,8 +31,6 @@ import {FormGroup, FormControl, Validators} from "@angular/forms";
 
 export class HeaderComponent {
   constructor() {}
-
-
 
 
 }

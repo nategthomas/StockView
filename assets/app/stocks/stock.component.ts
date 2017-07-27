@@ -8,7 +8,7 @@ import {Stock} from "./stock.model";
   selector: 'app-stock',
   templateUrl: './stock.component.html',
   styles: [`
-
+  
   `]
 })
 
