@@ -21,6 +21,7 @@ export class TagComponent {
     .subscribe((stock: any) => {
       console.log(stock)
     })
+    this.stockService.deletedStock(this.stock)
   }
 
 }

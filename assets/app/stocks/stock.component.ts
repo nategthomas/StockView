@@ -8,7 +8,7 @@ import {Stock} from "./stock.model";
   selector: 'app-stock',
   templateUrl: './stock.component.html',
   styles: [`
-  
+    
   `]
 })
 
@@ -32,6 +32,7 @@ export class StockComponent implements OnInit {
       this.stockService.addStock(stock)
       .subscribe((addedStock: Stock) => {
         this.stocks.unshift(addedStock);
+        this.stockService.emitStock(addedStock);
       })
     })
   }
