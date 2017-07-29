@@ -1,7 +1,26 @@
 var express = require('express');
 var router = express.Router();
+var app = express();
+var server = require('http').createServer(app);
+var io = require('socket.io')(server);
 
 var Stock = require('../models/stock');
+
+
+server.listen(4000);
+
+// socket io
+io.on('connection', function (socket) {
+  console.log('User connected');
+  socket.on('disconnect', function() {
+    console.log('User disconnected');
+  });
+  socket.on('save-stock', function (data) {
+    console.log(data);
+    io.emit('new-stock', { message: data });
+  });
+});
+
 
 
 router.get('/', function(req, res) {

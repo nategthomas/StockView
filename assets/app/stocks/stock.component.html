@@ -1,7 +1,9 @@
 
-<form class="">
-  <input #f>
-  <button (click)="getaStock(f.value)">Add</button>
+<form class=''>
+  <input
+  placeholder="Stock Code"
+  [value]='searchValue'
+  id="search" #f><button id='but' (click)="getaStock(f.value)">Add</button>
 </form>
 <div class='col-md-4'>
     <app-tag

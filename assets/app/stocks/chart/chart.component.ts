@@ -40,6 +40,9 @@ export class ChartyComponent implements AfterViewInit {
         title : { text : 'Stocks' },
         series : Series,
         chart: {
+          // backgroundColor: ,
+          borderColor: '#e7e7e7',
+          borderWidth: 1,
           height: 500,
           type: 'line',
           renderTo: this.chartEl.nativeElement
