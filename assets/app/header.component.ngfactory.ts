@@ -8,7 +8,7 @@
 
 import * as i0 from '@angular/core';
 import * as i1 from './header.component';
-const styles_HeaderComponent:any[] = ['.navbar[_ngcontent-%COMP%] {\n      height: 60px;\n    }\n    .navbar-brand[_ngcontent-%COMP%] {\n      padding: 19px 15px;\n      font-size: 1.8em;\n    }\n    a[_ngcontent-%COMP%] {\n      cursor: pointer;\n    }'];
+const styles_HeaderComponent:any[] = ['.navbar[_ngcontent-%COMP%] {\n      height: 60px;\n    }\n    .navbar-brand[_ngcontent-%COMP%] {\n      color: #FFE4C4;\n      padding: 19px 15px;\n      font-size: 1.8em;\n    }\n    a[_ngcontent-%COMP%] {\n      cursor: pointer;\n    }'];
 export const RenderType_HeaderComponent:i0.RendererType2 = i0.ɵcrt({encapsulation:0,
     styles:styles_HeaderComponent,data:{}});
 export function View_HeaderComponent_0(_l:any):i0.ɵViewDefinition {

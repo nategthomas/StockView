@@ -14,10 +14,8 @@ import * as i4 from '@angular/common';
 import * as i5 from '@angular/platform-browser';
 import * as i6 from '@angular/http';
 import * as i7 from '@angular/forms';
-import * as i8 from 'angular2-highcharts/dist/HighchartsService';
-import * as i9 from './errors/error.service';
-import * as i10 from './stocks/stock.service';
-import * as i11 from 'angular2-highcharts/dist/index';
+import * as i8 from './errors/error.service';
+import * as i9 from './stocks/stock.service';
 export const AppModuleNgFactory:i0.NgModuleFactory<i1.AppModule> = i0.ɵcmf(i1.AppModule,
     [i2.AppComponent],(_l:any) => {
       return i0.ɵmod([i0.ɵmpd(512,i0.ComponentFactoryResolver,i0.ɵCodegenComponentFactoryResolver,
@@ -47,11 +45,10 @@ export const AppModuleNgFactory:i0.NgModuleFactory<i1.AppModule> = i0.ɵcmf(i1.A
           i0.ɵmpd(4608,i6.RequestOptions,i6.BaseRequestOptions,([] as any[])),i0.ɵmpd(5120,
               i6.Http,i6.ɵc,[i6.XHRBackend,i6.RequestOptions]),i0.ɵmpd(4608,i7.ɵi,
               i7.ɵi,([] as any[])),i0.ɵmpd(4608,i7.FormBuilder,i7.FormBuilder,([] as any[])),
-          i0.ɵmpd(5120,i8.HighchartsStatic,i1.highchartsFactory,([] as any[])),i0.ɵmpd(4608,
-              i9.ErrorService,i9.ErrorService,([] as any[])),i0.ɵmpd(4608,i10.StockService,
-              i10.StockService,[i6.Http,i9.ErrorService]),i0.ɵmpd(512,i4.CommonModule,
-              i4.CommonModule,([] as any[])),i0.ɵmpd(1024,i0.ErrorHandler,i5.ɵa,([] as any[])),
-          i0.ɵmpd(1024,i0.APP_INITIALIZER,(p0_0:any,p0_1:any) => {
+          i0.ɵmpd(4608,i8.ErrorService,i8.ErrorService,([] as any[])),i0.ɵmpd(4608,
+              i9.StockService,i9.StockService,[i6.Http,i8.ErrorService]),i0.ɵmpd(512,
+              i4.CommonModule,i4.CommonModule,([] as any[])),i0.ɵmpd(1024,i0.ErrorHandler,
+              i5.ɵa,([] as any[])),i0.ɵmpd(1024,i0.APP_INITIALIZER,(p0_0:any,p0_1:any) => {
             return [i5.ɵc(p0_0,p0_1)];
           },[[2,i5.NgProbeToken],[2,i0.NgProbeToken]]),i0.ɵmpd(512,i0.ApplicationInitStatus,
               i0.ApplicationInitStatus,[[2,i0.APP_INITIALIZER]]),i0.ɵmpd(131584,i0.ɵe,
@@ -62,7 +59,6 @@ export const AppModuleNgFactory:i0.NgModuleFactory<i1.AppModule> = i0.ɵcmf(i1.A
               i6.HttpModule,i6.HttpModule,([] as any[])),i0.ɵmpd(512,i7.ɵba,i7.ɵba,
               ([] as any[])),i0.ɵmpd(512,i7.FormsModule,i7.FormsModule,([] as any[])),
           i0.ɵmpd(512,i7.ReactiveFormsModule,i7.ReactiveFormsModule,([] as any[])),
-          i0.ɵmpd(512,i11.ChartModule,i11.ChartModule,([] as any[])),i0.ɵmpd(512,i1.AppModule,
-              i1.AppModule,([] as any[]))]);
+          i0.ɵmpd(512,i1.AppModule,i1.AppModule,([] as any[]))]);
     });
-//# sourceMappingURL=data:application/json;base64,eyJmaWxlIjoiQzovVXNlcnMvbmd0aG8vRG9jdW1lbnRzL0phdmFTY3JpcHQvU3RvY2tfYXBwL2Fzc2V0cy9hcHAvYXBwLm1vZHVsZS5uZ2ZhY3RvcnkudHMiLCJ2ZXJzaW9uIjozLCJzb3VyY2VSb290IjoiIiwic291cmNlcyI6WyJuZzovLy9DOi9Vc2Vycy9uZ3Roby9Eb2N1bWVudHMvSmF2YVNjcmlwdC9TdG9ja19hcHAvYXNzZXRzL2FwcC9hcHAubW9kdWxlLnRzIl0sInNvdXJjZXNDb250ZW50IjpbIiAiXSwibWFwcGluZ3MiOiJBQUFBOzs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7In0=
+//# sourceMappingURL=data:application/json;base64,eyJmaWxlIjoiQzovVXNlcnMvbmd0aG8vRG9jdW1lbnRzL0phdmFTY3JpcHQvU3RvY2tfYXBwL2Fzc2V0cy9hcHAvYXBwLm1vZHVsZS5uZ2ZhY3RvcnkudHMiLCJ2ZXJzaW9uIjozLCJzb3VyY2VSb290IjoiIiwic291cmNlcyI6WyJuZzovLy9DOi9Vc2Vycy9uZ3Roby9Eb2N1bWVudHMvSmF2YVNjcmlwdC9TdG9ja19hcHAvYXNzZXRzL2FwcC9hcHAubW9kdWxlLnRzIl0sInNvdXJjZXNDb250ZW50IjpbIiAiXSwibWFwcGluZ3MiOiJBQUFBOzs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7OzsifQ==

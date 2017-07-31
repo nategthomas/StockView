@@ -20,6 +20,7 @@ import {FormGroup, FormControl, Validators} from "@angular/forms";
       height: 60px;
     }
     .navbar-brand {
+      color: #FFE4C4;
       padding: 19px 15px;
       font-size: 1.8em;
     }

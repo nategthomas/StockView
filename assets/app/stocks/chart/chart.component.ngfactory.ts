@@ -8,37 +8,26 @@
 
 import * as i0 from './chart.component.css.shim.ngstyle';
 import * as i1 from '@angular/core';
-import * as i2 from '../../../../node_modules/angular2-highcharts/dist/ChartComponent.ngfactory';
-import * as i3 from 'angular2-highcharts/dist/HighchartsService';
-import * as i4 from 'angular2-highcharts/dist/ChartComponent';
-import * as i5 from './chart.component';
-import * as i6 from '../stock.service';
+import * as i2 from './chart.component';
+import * as i3 from '../stock.service';
 const styles_ChartyComponent:any[] = [i0.styles];
 export const RenderType_ChartyComponent:i1.RendererType2 = i1.ɵcrt({encapsulation:0,
     styles:styles_ChartyComponent,data:{}});
 export function View_ChartyComponent_0(_l:any):i1.ɵViewDefinition {
-  return i1.ɵvid(0,[(_l()(),i1.ɵeld(0,(null as any),(null as any),5,'chart',[['height',
-      '700px'],['type','StockChart']],(null as any),(null as any),(null as any),i2.View_ChartComponent_0,
-      i2.RenderType_ChartComponent)),i1.ɵprd(512,(null as any),i3.HighchartsService,
-      i3.HighchartsService,[i3.HighchartsStatic]),i1.ɵdid(4243456,(null as any),3,
-      i4.ChartComponent,[i1.ElementRef,i3.HighchartsService],{type:[0,'type'],options:[1,
-          'options']},(null as any)),i1.ɵqud(335544320,1,{series:0}),i1.ɵqud(335544320,
-      2,{xAxis:0}),i1.ɵqud(335544320,3,{yAxis:0}),(_l()(),i1.ɵted((null as any),['\n']))],
-      (_ck,_v) => {
-        var _co:i5.ChartyComponent = _v.component;
-        const currVal_0:any = 'StockChart';
-        const currVal_1:any = _co.options;
-        _ck(_v,2,0,currVal_0,currVal_1);
-      },(null as any));
+  return i1.ɵvid(0,[i1.ɵqud(402653184,1,{chartEl:0}),(_l()(),i1.ɵeld(0,(null as any),
+      (null as any),4,'div',[['class',' cont']],(null as any),(null as any),(null as any),
+      (null as any),(null as any))),(_l()(),i1.ɵted((null as any),['\n  '])),(_l()(),
+      i1.ɵeld(0,[[1,0],['chart',1]],(null as any),1,'div',[['style',' display:block; width: 100% !important;']],
+          (null as any),(null as any),(null as any),(null as any),(null as any))),
+      (_l()(),i1.ɵted((null as any),['\n  '])),(_l()(),i1.ɵted((null as any),['\n\n'])),
+      (_l()(),i1.ɵted((null as any),['\n']))],(null as any),(null as any));
 }
 export function View_ChartyComponent_Host_0(_l:any):i1.ɵViewDefinition {
   return i1.ɵvid(0,[(_l()(),i1.ɵeld(0,(null as any),(null as any),1,'app-chart',([] as any[]),
       (null as any),(null as any),(null as any),View_ChartyComponent_0,RenderType_ChartyComponent)),
-      i1.ɵdid(114688,(null as any),0,i5.ChartyComponent,[i6.StockService],(null as any),
-          (null as any))],(_ck,_v) => {
-    _ck(_v,1,0);
-  },(null as any));
+      i1.ɵdid(4374528,(null as any),0,i2.ChartyComponent,[i3.StockService],(null as any),
+          (null as any))],(null as any),(null as any));
 }
-export const ChartyComponentNgFactory:i1.ComponentFactory<i5.ChartyComponent> = i1.ɵccf('app-chart',
-    i5.ChartyComponent,View_ChartyComponent_Host_0,{},{},([] as any[]));
-//# sourceMappingURL=data:application/json;base64,eyJmaWxlIjoiQzovVXNlcnMvbmd0aG8vRG9jdW1lbnRzL0phdmFTY3JpcHQvU3RvY2tfYXBwL2Fzc2V0cy9hcHAvc3RvY2tzL2NoYXJ0L2NoYXJ0LmNvbXBvbmVudC5uZ2ZhY3RvcnkudHMiLCJ2ZXJzaW9uIjozLCJzb3VyY2VSb290IjoiIiwic291cmNlcyI6WyJuZzovLy9DOi9Vc2Vycy9uZ3Roby9Eb2N1bWVudHMvSmF2YVNjcmlwdC9TdG9ja19hcHAvYXNzZXRzL2FwcC9zdG9ja3MvY2hhcnQvY2hhcnQuY29tcG9uZW50LnRzIiwibmc6Ly8vQzovVXNlcnMvbmd0aG8vRG9jdW1lbnRzL0phdmFTY3JpcHQvU3RvY2tfYXBwL2Fzc2V0cy9hcHAvc3RvY2tzL2NoYXJ0L2NoYXJ0LmNvbXBvbmVudC5odG1sIiwibmc6Ly8vQzovVXNlcnMvbmd0aG8vRG9jdW1lbnRzL0phdmFTY3JpcHQvU3RvY2tfYXBwL2Fzc2V0cy9hcHAvc3RvY2tzL2NoYXJ0L2NoYXJ0LmNvbXBvbmVudC50cy5DaGFydHlDb21wb25lbnRfSG9zdC5odG1sIl0sInNvdXJjZXNDb250ZW50IjpbIiAiLCI8Y2hhcnQgaGVpZ2h0PVwiNzAwcHhcIiB0eXBlPVwiU3RvY2tDaGFydFwiIFtvcHRpb25zXT1cIm9wdGlvbnNcIj48L2NoYXJ0PlxyXG4iLCI8YXBwLWNoYXJ0PjwvYXBwLWNoYXJ0PiJdLCJtYXBwaW5ncyI6IkFBQUE7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7b0JDQUE7TUFBQTtrQ0FBQTsyQkFBQSw4QkFBQTt3QkFBQTtVQUFBO01BQUEsNENBQW9FOzs7UUFBOUM7UUFBa0I7UUFBeEMsV0FBc0IsVUFBa0IsU0FBeEM7Ozs7b0JDQUE7TUFBQTthQUFBO1VBQUE7SUFBQTs7OzsifQ==
+export const ChartyComponentNgFactory:i1.ComponentFactory<i2.ChartyComponent> = i1.ɵccf('app-chart',
+    i2.ChartyComponent,View_ChartyComponent_Host_0,{},{},([] as any[]));
+//# sourceMappingURL=data:application/json;base64,eyJmaWxlIjoiQzovVXNlcnMvbmd0aG8vRG9jdW1lbnRzL0phdmFTY3JpcHQvU3RvY2tfYXBwL2Fzc2V0cy9hcHAvc3RvY2tzL2NoYXJ0L2NoYXJ0LmNvbXBvbmVudC5uZ2ZhY3RvcnkudHMiLCJ2ZXJzaW9uIjozLCJzb3VyY2VSb290IjoiIiwic291cmNlcyI6WyJuZzovLy9DOi9Vc2Vycy9uZ3Roby9Eb2N1bWVudHMvSmF2YVNjcmlwdC9TdG9ja19hcHAvYXNzZXRzL2FwcC9zdG9ja3MvY2hhcnQvY2hhcnQuY29tcG9uZW50LnRzIiwibmc6Ly8vQzovVXNlcnMvbmd0aG8vRG9jdW1lbnRzL0phdmFTY3JpcHQvU3RvY2tfYXBwL2Fzc2V0cy9hcHAvc3RvY2tzL2NoYXJ0L2NoYXJ0LmNvbXBvbmVudC5odG1sIiwibmc6Ly8vQzovVXNlcnMvbmd0aG8vRG9jdW1lbnRzL0phdmFTY3JpcHQvU3RvY2tfYXBwL2Fzc2V0cy9hcHAvc3RvY2tzL2NoYXJ0L2NoYXJ0LmNvbXBvbmVudC50cy5DaGFydHlDb21wb25lbnRfSG9zdC5odG1sIl0sInNvdXJjZXNDb250ZW50IjpbIiAiLCI8ZGl2IGNsYXNzPVwiIGNvbnRcIj5cclxuICA8ZGl2XHJcbiAgI2NoYXJ0XHJcbiAgc3R5bGU9XCIgZGlzcGxheTpibG9jazsgd2lkdGg6IDEwMCUgIWltcG9ydGFudDtcIlxyXG4gID5cclxuICA8L2Rpdj5cclxuXHJcbjwvZGl2PlxyXG4iLCI8YXBwLWNoYXJ0PjwvYXBwLWNoYXJ0PiJdLCJtYXBwaW5ncyI6IkFBQUE7Ozs7Ozs7Ozs7Ozs7Ozs7cURDQUE7TUFBQTtNQUFBLDhCQUFtQix5Q0FDakI7YUFBQTtVQUFBO01BR0MseUNBQ0s7TUFFRjs7O29CQ1BOO01BQUE7YUFBQTtVQUFBOzs7In0=

@@ -39,11 +39,11 @@ export class ChartyComponent implements AfterViewInit {
         Series.push(seriesOption);
       })
       var options = {
-        title : { text : 'Stocks' },
+        // title : { text : 'Stocks' },
         series : Series,
         chart: {
           // backgroundColor: ,
-          borderColor: '#e7e7e7',
+          borderColor: '#FFE4C4',
           borderWidth: 1,
           height: 500,
           type: 'line',
@@ -70,10 +70,8 @@ export class ChartyComponent implements AfterViewInit {
       this.socket.on('delete-receive', (data) => {
         var socketdelete = data.message;
         this._chart.get(socketdelete.name).remove();
+        })
       })
-      })
-
-
     }
 
 

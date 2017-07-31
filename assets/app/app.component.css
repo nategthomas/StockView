@@ -4,4 +4,21 @@ h1 {
 
 .container1 {
   margin: 10px;
+  min-height: calc(100vh - 160px)
+}
+
+footer {
+height: 50px;
+width: 100%;
+bottom: 0px;
+}
+
+
+p {
+text-align: center;
+}
+
+a {
+  text-decoration: none;
+  color: #222222;
 }

@@ -15,7 +15,7 @@ import * as i5 from './stock.component';
 import * as i6 from '@angular/common';
 import * as i7 from './chart/chart.component.ngfactory';
 import * as i8 from './chart/chart.component';
-const styles_StockComponent:any[] = [''];
+const styles_StockComponent:any[] = ['.searchCont[_ngcontent-%COMP%] {\n      min-width: 300px\n    }\n    #search[_ngcontent-%COMP%] {\n      min-width: 100px;\n      margin-right: 0px;\n      margin-left: 15px;\n      padding: 8px;\n      border-top-left-radius: 3px;\n      border-bottom-left-radius: 3px;\n      border: 1px solid #777;\n\n    }\n    #but[_ngcontent-%COMP%] {\n      margin: -1px;\n      padding: 7px;\n      border-top-right-radius: 3px;\n      border-bottom-right-radius: 3px;\n      border: 1px solid #777;\n      font-size: 1.1em;\n    }'];
 export const RenderType_StockComponent:i0.RendererType2 = i0.ɵcrt({encapsulation:0,
     styles:styles_StockComponent,data:{}});
 function View_StockComponent_1(_l:any):i0.ɵViewDefinition {
@@ -28,64 +28,130 @@ function View_StockComponent_1(_l:any):i0.ɵViewDefinition {
   },(null as any));
 }
 export function View_StockComponent_0(_l:any):i0.ɵViewDefinition {
-  return i0.ɵvid(0,[(_l()(),i0.ɵted((null as any),['\n'])),(_l()(),i0.ɵeld(0,(null as any),
-      (null as any),10,'form',[['class',''],['novalidate','']],[[2,'ng-untouched',
-          (null as any)],[2,'ng-touched',(null as any)],[2,'ng-pristine',(null as any)],
-          [2,'ng-dirty',(null as any)],[2,'ng-valid',(null as any)],[2,'ng-invalid',
-              (null as any)],[2,'ng-pending',(null as any)]],[[(null as any),'submit'],
-          [(null as any),'reset']],(_v,en,$event) => {
-        var ad:boolean = true;
-        if (('submit' === en)) {
-          const pd_0:any = ((<any>i0.ɵnov(_v,3).onSubmit($event)) !== false);
-          ad = (pd_0 && ad);
-        }
-        if (('reset' === en)) {
-          const pd_1:any = ((<any>i0.ɵnov(_v,3).onReset()) !== false);
-          ad = (pd_1 && ad);
-        }
-        return ad;
-      },(null as any),(null as any))),i0.ɵdid(16384,(null as any),0,i4.ɵbf,([] as any[]),
-      (null as any),(null as any)),i0.ɵdid(16384,(null as any),0,i4.NgForm,[[8,(null as any)],
-      [8,(null as any)]],(null as any),(null as any)),i0.ɵprd(2048,(null as any),i4.ControlContainer,
-      (null as any),[i4.NgForm]),i0.ɵdid(16384,(null as any),0,i4.NgControlStatusGroup,
-      [i4.ControlContainer],(null as any),(null as any)),(_l()(),i0.ɵted((null as any),
-      ['\n  '])),(_l()(),i0.ɵeld(0,[['f',1]],(null as any),0,'input',([] as any[]),
-      (null as any),(null as any),(null as any),(null as any),(null as any))),(_l()(),
-      i0.ɵted((null as any),['\n  '])),(_l()(),i0.ɵeld(0,(null as any),(null as any),
-      1,'button',([] as any[]),(null as any),[[(null as any),'click']],(_v,en,$event) => {
-        var ad:boolean = true;
-        var _co:i5.StockComponent = _v.component;
-        if (('click' === en)) {
-          const pd_0:any = ((<any>_co.getaStock(i0.ɵnov(_v,7).value)) !== false);
-          ad = (pd_0 && ad);
-        }
-        return ad;
-      },(null as any),(null as any))),(_l()(),i0.ɵted((null as any),['Hit me!'])),
-      (_l()(),i0.ɵted((null as any),['\n'])),(_l()(),i0.ɵted((null as any),['\n'])),
-      (_l()(),i0.ɵeld(0,(null as any),(null as any),4,'div',[['class','col-md-4']],
+  return i0.ɵvid(0,[(_l()(),i0.ɵeld(0,(null as any),(null as any),41,'div',[['class',
+      '']],(null as any),(null as any),(null as any),(null as any),(null as any))),
+      (_l()(),i0.ɵted((null as any),['\n  '])),(_l()(),i0.ɵeld(0,(null as any),(null as any),
+          38,'div',[['class','row']],(null as any),(null as any),(null as any),(null as any),
+          (null as any))),(_l()(),i0.ɵted((null as any),['\n    '])),(_l()(),i0.ɵeld(0,
+          (null as any),(null as any),35,'div',[['class','col-md-offset-1 col-md-10 col-md-offset-1']],
           (null as any),(null as any),(null as any),(null as any),(null as any))),
-      (_l()(),i0.ɵted((null as any),['\n    '])),(_l()(),i0.ɵand(16777216,(null as any),
+      (_l()(),i0.ɵted((null as any),['\n      '])),(_l()(),i0.ɵeld(0,(null as any),
+          (null as any),20,'div',[['class','searchCont']],(null as any),(null as any),
+          (null as any),(null as any),(null as any))),(_l()(),i0.ɵted((null as any),
+          ['\n        '])),(_l()(),i0.ɵeld(0,(null as any),(null as any),17,'form',
+          [['class',''],['novalidate','']],[[2,'ng-untouched',(null as any)],[2,'ng-touched',
+              (null as any)],[2,'ng-pristine',(null as any)],[2,'ng-dirty',(null as any)],
+              [2,'ng-valid',(null as any)],[2,'ng-invalid',(null as any)],[2,'ng-pending',
+                  (null as any)]],[[(null as any),'submit'],[(null as any),'reset']],
+          (_v,en,$event) => {
+            var ad:boolean = true;
+            if (('submit' === en)) {
+              const pd_0:any = ((<any>i0.ɵnov(_v,10).onSubmit($event)) !== false);
+              ad = (pd_0 && ad);
+            }
+            if (('reset' === en)) {
+              const pd_1:any = ((<any>i0.ɵnov(_v,10).onReset()) !== false);
+              ad = (pd_1 && ad);
+            }
+            return ad;
+          },(null as any),(null as any))),i0.ɵdid(16384,(null as any),0,i4.ɵbf,([] as any[]),
+          (null as any),(null as any)),i0.ɵdid(16384,(null as any),0,i4.NgForm,[[8,
+          (null as any)],[8,(null as any)]],(null as any),(null as any)),i0.ɵprd(2048,
+          (null as any),i4.ControlContainer,(null as any),[i4.NgForm]),i0.ɵdid(16384,
+          (null as any),0,i4.NgControlStatusGroup,[i4.ControlContainer],(null as any),
+          (null as any)),(_l()(),i0.ɵted((null as any),['\n          '])),(_l()(),
+          i0.ɵeld(0,(null as any),(null as any),10,'div',[['class','']],(null as any),
+              (null as any),(null as any),(null as any),(null as any))),(_l()(),i0.ɵted((null as any),
+          ['\n            '])),(_l()(),i0.ɵeld(0,[['f',1]],(null as any),5,'input',
+          [['id','search'],['name','stocksearch'],['placeholder','Stock Code']],[[2,
+              'ng-untouched',(null as any)],[2,'ng-touched',(null as any)],[2,'ng-pristine',
+              (null as any)],[2,'ng-dirty',(null as any)],[2,'ng-valid',(null as any)],
+              [2,'ng-invalid',(null as any)],[2,'ng-pending',(null as any)]],[[(null as any),
+              'ngModelChange'],[(null as any),'input'],[(null as any),'blur'],[(null as any),
+              'compositionstart'],[(null as any),'compositionend']],(_v,en,$event) => {
+            var ad:boolean = true;
+            var _co:i5.StockComponent = _v.component;
+            if (('input' === en)) {
+              const pd_0:any = ((<any>i0.ɵnov(_v,17)._handleInput($event.target.value)) !== false);
+              ad = (pd_0 && ad);
+            }
+            if (('blur' === en)) {
+              const pd_1:any = ((<any>i0.ɵnov(_v,17).onTouched()) !== false);
+              ad = (pd_1 && ad);
+            }
+            if (('compositionstart' === en)) {
+              const pd_2:any = ((<any>i0.ɵnov(_v,17)._compositionStart()) !== false);
+              ad = (pd_2 && ad);
+            }
+            if (('compositionend' === en)) {
+              const pd_3:any = ((<any>i0.ɵnov(_v,17)._compositionEnd($event.target.value)) !== false);
+              ad = (pd_3 && ad);
+            }
+            if (('ngModelChange' === en)) {
+              const pd_4:any = ((<any>(_co.searchValue = $event)) !== false);
+              ad = (pd_4 && ad);
+            }
+            return ad;
+          },(null as any),(null as any))),i0.ɵdid(16384,(null as any),0,i4.DefaultValueAccessor,
+          [i0.Renderer2,i0.ElementRef,[2,i4.COMPOSITION_BUFFER_MODE]],(null as any),
+          (null as any)),i0.ɵprd(1024,(null as any),i4.NG_VALUE_ACCESSOR,(p0_0:any) => {
+        return [p0_0];
+      },[i4.DefaultValueAccessor]),i0.ɵdid(671744,(null as any),0,i4.NgModel,[[2,i4.ControlContainer],
+          [8,(null as any)],[8,(null as any)],[2,i4.NG_VALUE_ACCESSOR]],{name:[0,'name'],
+          model:[1,'model']},{update:'ngModelChange'}),i0.ɵprd(2048,(null as any),
+          i4.NgControl,(null as any),[i4.NgModel]),i0.ɵdid(16384,(null as any),0,i4.NgControlStatus,
+          [i4.NgControl],(null as any),(null as any)),(_l()(),i0.ɵeld(0,(null as any),
+          (null as any),1,'button',[['class',''],['id','but']],(null as any),[[(null as any),
+              'click']],(_v,en,$event) => {
+            var ad:boolean = true;
+            var _co:i5.StockComponent = _v.component;
+            if (('click' === en)) {
+              const pd_0:any = ((<any>_co.getaStock(i0.ɵnov(_v,16).value)) !== false);
+              ad = (pd_0 && ad);
+            }
+            return ad;
+          },(null as any),(null as any))),(_l()(),i0.ɵted((null as any),['Add'])),
+      (_l()(),i0.ɵted((null as any),['\n          '])),(_l()(),i0.ɵted((null as any),
+          ['\n        '])),(_l()(),i0.ɵted((null as any),['\n      '])),(_l()(),i0.ɵted((null as any),
+          ['\n      '])),(_l()(),i0.ɵeld(0,(null as any),(null as any),4,'div',[['class',
+          'col-md-4']],(null as any),(null as any),(null as any),(null as any),(null as any))),
+      (_l()(),i0.ɵted((null as any),['\n        '])),(_l()(),i0.ɵand(16777216,(null as any),
           (null as any),1,(null as any),View_StockComponent_1)),i0.ɵdid(802816,(null as any),
           0,i6.NgForOf,[i0.ViewContainerRef,i0.TemplateRef,i0.IterableDiffers],{ngForOf:[0,
-              'ngForOf']},(null as any)),(_l()(),i0.ɵted((null as any),['\n'])),(_l()(),
-          i0.ɵted((null as any),['\n'])),(_l()(),i0.ɵeld(0,(null as any),(null as any),
-          1,'app-chart',([] as any[]),(null as any),(null as any),(null as any),i7.View_ChartyComponent_0,
-          i7.RenderType_ChartyComponent)),i0.ɵdid(114688,(null as any),0,i8.ChartyComponent,
+              'ngForOf']},(null as any)),(_l()(),i0.ɵted((null as any),['\n      '])),
+      (_l()(),i0.ɵted((null as any),['\n      '])),(_l()(),i0.ɵeld(0,(null as any),
+          (null as any),4,'div',[['class','col-md-7']],(null as any),(null as any),
+          (null as any),(null as any),(null as any))),(_l()(),i0.ɵted((null as any),
+          ['\n        '])),(_l()(),i0.ɵeld(0,(null as any),(null as any),1,'app-chart',
+          ([] as any[]),(null as any),(null as any),(null as any),i7.View_ChartyComponent_0,
+          i7.RenderType_ChartyComponent)),i0.ɵdid(4374528,(null as any),0,i8.ChartyComponent,
           [i3.StockService],(null as any),(null as any)),(_l()(),i0.ɵted((null as any),
+          ['\n      '])),(_l()(),i0.ɵted((null as any),['\n\n    '])),(_l()(),i0.ɵted((null as any),
+          ['\n\n  '])),(_l()(),i0.ɵted((null as any),['\n\n'])),(_l()(),i0.ɵted((null as any),
           ['\n']))],(_ck,_v) => {
     var _co:i5.StockComponent = _v.component;
-    const currVal_7:any = _co.stocks;
-    _ck(_v,16,0,currVal_7);
-    _ck(_v,20,0);
+    const currVal_14:any = 'stocksearch';
+    const currVal_15:any = _co.searchValue;
+    _ck(_v,19,0,currVal_14,currVal_15);
+    const currVal_16:any = _co.stocks;
+    _ck(_v,31,0,currVal_16);
   },(_ck,_v) => {
-    const currVal_0:any = i0.ɵnov(_v,5).ngClassUntouched;
-    const currVal_1:any = i0.ɵnov(_v,5).ngClassTouched;
-    const currVal_2:any = i0.ɵnov(_v,5).ngClassPristine;
-    const currVal_3:any = i0.ɵnov(_v,5).ngClassDirty;
-    const currVal_4:any = i0.ɵnov(_v,5).ngClassValid;
-    const currVal_5:any = i0.ɵnov(_v,5).ngClassInvalid;
-    const currVal_6:any = i0.ɵnov(_v,5).ngClassPending;
-    _ck(_v,1,0,currVal_0,currVal_1,currVal_2,currVal_3,currVal_4,currVal_5,currVal_6);
+    const currVal_0:any = i0.ɵnov(_v,12).ngClassUntouched;
+    const currVal_1:any = i0.ɵnov(_v,12).ngClassTouched;
+    const currVal_2:any = i0.ɵnov(_v,12).ngClassPristine;
+    const currVal_3:any = i0.ɵnov(_v,12).ngClassDirty;
+    const currVal_4:any = i0.ɵnov(_v,12).ngClassValid;
+    const currVal_5:any = i0.ɵnov(_v,12).ngClassInvalid;
+    const currVal_6:any = i0.ɵnov(_v,12).ngClassPending;
+    _ck(_v,8,0,currVal_0,currVal_1,currVal_2,currVal_3,currVal_4,currVal_5,currVal_6);
+    const currVal_7:any = i0.ɵnov(_v,21).ngClassUntouched;
+    const currVal_8:any = i0.ɵnov(_v,21).ngClassTouched;
+    const currVal_9:any = i0.ɵnov(_v,21).ngClassPristine;
+    const currVal_10:any = i0.ɵnov(_v,21).ngClassDirty;
+    const currVal_11:any = i0.ɵnov(_v,21).ngClassValid;
+    const currVal_12:any = i0.ɵnov(_v,21).ngClassInvalid;
+    const currVal_13:any = i0.ɵnov(_v,21).ngClassPending;
+    _ck(_v,16,0,currVal_7,currVal_8,currVal_9,currVal_10,currVal_11,currVal_12,currVal_13);
   });
 }
 export function View_StockComponent_Host_0(_l:any):i0.ɵViewDefinition {
@@ -98,4 +164,4 @@ export function View_StockComponent_Host_0(_l:any):i0.ɵViewDefinition {
 }
 export const StockComponentNgFactory:i0.ComponentFactory<i5.StockComponent> = i0.ɵccf('app-stock',
     i5.StockComponent,View_StockComponent_Host_0,{},{},([] as any[]));
-//# sourceMappingURL=data:application/json;base64,eyJmaWxlIjoiQzovVXNlcnMvbmd0aG8vRG9jdW1lbnRzL0phdmFTY3JpcHQvU3RvY2tfYXBwL2Fzc2V0cy9hcHAvc3RvY2tzL3N0b2NrLmNvbXBvbmVudC5uZ2ZhY3RvcnkudHMiLCJ2ZXJzaW9uIjozLCJzb3VyY2VSb290IjoiIiwic291cmNlcyI6WyJuZzovLy9DOi9Vc2Vycy9uZ3Roby9Eb2N1bWVudHMvSmF2YVNjcmlwdC9TdG9ja19hcHAvYXNzZXRzL2FwcC9zdG9ja3Mvc3RvY2suY29tcG9uZW50LnRzIiwibmc6Ly8vQzovVXNlcnMvbmd0aG8vRG9jdW1lbnRzL0phdmFTY3JpcHQvU3RvY2tfYXBwL2Fzc2V0cy9hcHAvc3RvY2tzL3N0b2NrLmNvbXBvbmVudC5odG1sIiwibmc6Ly8vQzovVXNlcnMvbmd0aG8vRG9jdW1lbnRzL0phdmFTY3JpcHQvU3RvY2tfYXBwL2Fzc2V0cy9hcHAvc3RvY2tzL3N0b2NrLmNvbXBvbmVudC50cy5TdG9ja0NvbXBvbmVudF9Ib3N0Lmh0bWwiXSwic291cmNlc0NvbnRlbnQiOlsiICIsIlxyXG48Zm9ybSBjbGFzcz1cIlwiPlxyXG4gIDxpbnB1dCAjZj5cclxuICA8YnV0dG9uIChjbGljayk9XCJnZXRhU3RvY2soZi52YWx1ZSlcIj5IaXQgbWUhPC9idXR0b24+XHJcbjwvZm9ybT5cclxuPGRpdiBjbGFzcz0nY29sLW1kLTQnPlxyXG4gICAgPGFwcC10YWdcclxuICAgICpuZ0Zvcj1cImxldCBzdG9jayBvZiBzdG9ja3NcIlxyXG4gICAgW3N0b2NrXT1cInN0b2NrXCJcclxuICAgID48L2FwcC10YWc+XHJcbjwvZGl2PlxyXG48YXBwLWNoYXJ0PjwvYXBwLWNoYXJ0PlxyXG4iLCI8YXBwLXN0b2NrPjwvYXBwLXN0b2NrPiJdLCJtYXBwaW5ncyI6IkFBQUE7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7OztvQkNNSTtNQUFBO2FBQUE7VUFBQTtJQUVBO0lBRkEsV0FFQSxTQUZBOzs7O29CQU5KLHVDQUNBO01BQUE7VUFBQTtVQUFBO2NBQUE7VUFBQTtRQUFBO1FBQUE7VUFBQTtVQUFBO1FBQUE7UUFBQTtVQUFBO1VBQUE7UUFBQTtRQUFBO01BQUEsdUNBQUE7TUFBQSxvQ0FBQTtNQUFBLHVEQUFBO01BQUEsa0NBQUE7TUFBQSxtREFBZTtNQUFBLFdBQ2I7TUFBQSx3RUFBVTthQUFBLDBCQUNWO01BQUE7UUFBQTtRQUFBO1FBQVE7VUFBQTtVQUFBO1FBQUE7UUFBUjtNQUFBLGdDQUFxQztNQUFnQix1Q0FDaEQ7TUFDUDtVQUFBO01BQXNCLDJDQUNsQjtVQUFBLDZEQUFBO1VBQUE7Y0FBQSwyQkFHVyx1Q0FDVDtpQkFBQSx3QkFDTjtVQUFBO3VDQUFBLFVBQUE7VUFBQSwrQ0FBdUI7VUFBQTs7SUFKbkI7SUFEQSxZQUNBLFNBREE7SUFLSjs7SUFWQTtJQUFBO0lBQUE7SUFBQTtJQUFBO0lBQUE7SUFBQTtJQUFBLFdBQUEscUVBQUE7Ozs7b0JDREE7TUFBQTthQUFBO1VBQUE7SUFBQTs7OzsifQ==
+//# sourceMappingURL=data:application/json;base64,eyJmaWxlIjoiQzovVXNlcnMvbmd0aG8vRG9jdW1lbnRzL0phdmFTY3JpcHQvU3RvY2tfYXBwL2Fzc2V0cy9hcHAvc3RvY2tzL3N0b2NrLmNvbXBvbmVudC5uZ2ZhY3RvcnkudHMiLCJ2ZXJzaW9uIjozLCJzb3VyY2VSb290IjoiIiwic291cmNlcyI6WyJuZzovLy9DOi9Vc2Vycy9uZ3Roby9Eb2N1bWVudHMvSmF2YVNjcmlwdC9TdG9ja19hcHAvYXNzZXRzL2FwcC9zdG9ja3Mvc3RvY2suY29tcG9uZW50LnRzIiwibmc6Ly8vQzovVXNlcnMvbmd0aG8vRG9jdW1lbnRzL0phdmFTY3JpcHQvU3RvY2tfYXBwL2Fzc2V0cy9hcHAvc3RvY2tzL3N0b2NrLmNvbXBvbmVudC5odG1sIiwibmc6Ly8vQzovVXNlcnMvbmd0aG8vRG9jdW1lbnRzL0phdmFTY3JpcHQvU3RvY2tfYXBwL2Fzc2V0cy9hcHAvc3RvY2tzL3N0b2NrLmNvbXBvbmVudC50cy5TdG9ja0NvbXBvbmVudF9Ib3N0Lmh0bWwiXSwic291cmNlc0NvbnRlbnQiOlsiICIsIjxkaXYgY2xhc3M9XCJcIj5cclxuICA8ZGl2IGNsYXNzPVwicm93XCI+XHJcbiAgICA8ZGl2IGNsYXNzPVwiY29sLW1kLW9mZnNldC0xIGNvbC1tZC0xMCBjb2wtbWQtb2Zmc2V0LTFcIj5cclxuICAgICAgPGRpdiBjbGFzcz1cInNlYXJjaENvbnRcIj5cclxuICAgICAgICA8Zm9ybSBjbGFzcz0nJz5cclxuICAgICAgICAgIDxkaXYgY2xhc3M9XCJcIj5cclxuICAgICAgICAgICAgPGlucHV0XHJcbiAgICAgICAgICAgIG5hbWU9XCJzdG9ja3NlYXJjaFwiXHJcbiAgICAgICAgICAgIHBsYWNlaG9sZGVyPVwiU3RvY2sgQ29kZVwiXHJcbiAgICAgICAgICAgIFsobmdNb2RlbCldPSdzZWFyY2hWYWx1ZSdcclxuICAgICAgICAgICAgaWQ9XCJzZWFyY2hcIlxyXG4gICAgICAgICAgICAjZlxyXG4gICAgICAgICAgICA+PGJ1dHRvbiBjbGFzcz1cIlwiIGlkPSdidXQnIChjbGljayk9XCJnZXRhU3RvY2soZi52YWx1ZSlcIj5BZGQ8L2J1dHRvbj5cclxuICAgICAgICAgIDwvZGl2PlxyXG4gICAgICAgIDwvZm9ybT5cclxuICAgICAgPC9kaXY+XHJcbiAgICAgIDxkaXYgY2xhc3M9J2NvbC1tZC00Jz5cclxuICAgICAgICA8YXBwLXRhZ1xyXG4gICAgICAgICpuZ0Zvcj1cImxldCBzdG9jayBvZiBzdG9ja3NcIlxyXG4gICAgICAgIFtzdG9ja109XCJzdG9ja1wiXHJcbiAgICAgICAgPjwvYXBwLXRhZz5cclxuICAgICAgPC9kaXY+XHJcbiAgICAgIDxkaXYgY2xhc3M9XCJjb2wtbWQtN1wiPlxyXG4gICAgICAgIDxhcHAtY2hhcnQ+PC9hcHAtY2hhcnQ+XHJcbiAgICAgIDwvZGl2PlxyXG5cclxuICAgIDwvZGl2PlxyXG5cclxuICA8L2Rpdj5cclxuXHJcbjwvZGl2PlxyXG4iLCI8YXBwLXN0b2NrPjwvYXBwLXN0b2NrPiJdLCJtYXBwaW5ncyI6IkFBQUE7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7OztvQkNpQlE7TUFBQTthQUFBO1VBQUE7SUFFQTtJQUZBLFdBRUEsU0FGQTs7OztvQkFqQlI7TUFBQTtNQUFjLHlDQUNaO1VBQUE7VUFBQSxnQkFBaUIsMkNBQ2Y7VUFBQTtVQUFBO01BQXVELDZDQUNyRDtVQUFBO1VBQUEsNENBQXdCO1VBQUEsaUJBQ3RCO1VBQUE7Y0FBQTtjQUFBO2tCQUFBO1VBQUE7WUFBQTtZQUFBO2NBQUE7Y0FBQTtZQUFBO1lBQUE7Y0FBQTtjQUFBO1lBQUE7WUFBQTtVQUFBLHVDQUFBO1VBQUEsb0NBQUE7VUFBQSxzRUFBQTtVQUFBLG9FQUFBO1VBQUE7VUFBQSxlQUFlLGlEQUNiO2lCQUFBO2NBQUEsMERBQWM7VUFBQSxxQkFDWjtVQUFBO2NBQUE7Y0FBQTtjQUFBO2NBQUE7Y0FBQTtZQUFBO1lBQUE7WUFBQTtjQUFBO2NBQUE7WUFBQTtZQUFBO2NBQUE7Y0FBQTtZQUFBO1lBQUE7Y0FBQTtjQUFBO1lBQUE7WUFBQTtjQUFBO2NBQUE7WUFBQTtZQUdBO2NBQUE7Y0FBQTtZQUFBO1lBSEE7VUFBQSx1Q0FBQTtVQUFBO1VBQUEsc0JBQUE7UUFBQTtNQUFBLG9DQUFBO1VBQUE7VUFBQSxvREFBQTt1QkFBQSxtQ0FBQTtVQUFBLDRDQU1DO1VBQUE7Y0FBQTtZQUFBO1lBQUE7WUFBMEI7Y0FBQTtjQUFBO1lBQUE7WUFBMUI7VUFBQSxnQ0FBdUQ7TUFBWSxpREFDaEU7VUFBQSxpQkFDRCw2Q0FDSDtVQUFBLGVBQ047VUFBQTtNQUFzQiwrQ0FDcEI7VUFBQSw2REFBQTtVQUFBO2NBQUEsMkJBR1c7TUFDUCw2Q0FDTjtVQUFBO1VBQUEsNENBQXNCO1VBQUEsaUJBQ3BCO1VBQUE7dUNBQUEsVUFBQTtVQUFBLCtDQUF1QjtVQUFBLGVBQ25CLDZDQUVGO1VBQUEsYUFFRix5Q0FFRjtVQUFBOztJQXZCTTtJQUVBO0lBSEEsWUFDQSxXQUVBLFVBSEE7SUFZSjtJQURBLFlBQ0EsVUFEQTs7SUFiQTtJQUFBO0lBQUE7SUFBQTtJQUFBO0lBQUE7SUFBQTtJQUFBLFdBQUEscUVBQUE7SUFFSTtJQUFBO0lBQUE7SUFBQTtJQUFBO0lBQUE7SUFBQTtJQUFBLFlBQUEseUVBQUE7Ozs7b0JDTlo7TUFBQTthQUFBO1VBQUE7SUFBQTs7OzsifQ==

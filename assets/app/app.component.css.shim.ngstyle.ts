@@ -6,5 +6,5 @@
  /* tslint:disable */
 
 
-export const styles:any[] = ['h1[_ngcontent-%COMP%] {\n    color: red;\n}\n\n.container1[_ngcontent-%COMP%] {\n  margin: 10px;\n}'];
+export const styles:any[] = ['h1[_ngcontent-%COMP%] {\n    color: red;\n}\n\n.container1[_ngcontent-%COMP%] {\n  margin: 10px;\n  min-height: calc(100vh - 160px)\n}\n\nfooter[_ngcontent-%COMP%] {\nheight: 50px;\nwidth: 100%;\nbottom: 0px;\n}\n\n\np[_ngcontent-%COMP%] {\ntext-align: center;\n}\n\na[_ngcontent-%COMP%] {\n  text-decoration: none;\n  color: #222222;\n}'];
 //# sourceMappingURL=data:application/json;base64,eyJmaWxlIjoiQzovVXNlcnMvbmd0aG8vRG9jdW1lbnRzL0phdmFTY3JpcHQvU3RvY2tfYXBwL2Fzc2V0cy9hcHAvYXBwLmNvbXBvbmVudC5jc3Muc2hpbS5uZ3N0eWxlLnRzIiwidmVyc2lvbiI6Mywic291cmNlUm9vdCI6IiIsInNvdXJjZXMiOlsibmc6Ly8vQzovVXNlcnMvbmd0aG8vRG9jdW1lbnRzL0phdmFTY3JpcHQvU3RvY2tfYXBwL2Fzc2V0cy9hcHAvYXBwLmNvbXBvbmVudC5jc3MiXSwic291cmNlc0NvbnRlbnQiOlsiICJdLCJtYXBwaW5ncyI6IkFBQUE7Ozs7Ozs7OyJ9

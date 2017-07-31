@@ -1,14 +1,31 @@
+<div class="">
+  <div class="row">
+    <div class="col-md-offset-1 col-md-10 col-md-offset-1">
+      <div class="searchCont">
+        <form class=''>
+          <div class="">
+            <input
+            name="stocksearch"
+            placeholder="Stock Code"
+            [(ngModel)]='searchValue'
+            id="search"
+            #f
+            ><button class="" id='but' (click)="getaStock(f.value)">Add</button>
+          </div>
+        </form>
+      </div>
+      <div class='col-md-4'>
+        <app-tag
+        *ngFor="let stock of stocks"
+        [stock]="stock"
+        ></app-tag>
+      </div>
+      <div class="col-md-7">
+        <app-chart></app-chart>
+      </div>
 
-<form class=''>
-  <input
-  placeholder="Stock Code"
-  [value]='searchValue'
-  id="search" #f><button id='but' (click)="getaStock(f.value)">Add</button>
-</form>
-<div class='col-md-4'>
-    <app-tag
-    *ngFor="let stock of stocks"
-    [stock]="stock"
-    ></app-tag>
+    </div>
+
+  </div>
+
 </div>
-<app-chart></app-chart>

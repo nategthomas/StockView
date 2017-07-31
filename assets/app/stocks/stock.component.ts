@@ -9,11 +9,14 @@ import {Stock} from "./stock.model";
   selector: 'app-stock',
   templateUrl: './stock.component.html',
   styles: [`
+    .searchCont {
+      min-width: 300px
+    }
     #search {
+      min-width: 100px;
       margin-right: 0px;
       margin-left: 15px;
       padding: 8px;
-      width: 250px;
       border-top-left-radius: 3px;
       border-bottom-left-radius: 3px;
       border: 1px solid #777;
@@ -22,7 +25,6 @@ import {Stock} from "./stock.model";
     #but {
       margin: -1px;
       padding: 7px;
-      width: 50px;
       border-top-right-radius: 3px;
       border-bottom-right-radius: 3px;
       border: 1px solid #777;

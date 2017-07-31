@@ -25,18 +25,33 @@ export function View_AppComponent_0(_l:any):i1.ɵViewDefinition {
       (null as any),(null as any),(null as any),i2.View_HeaderComponent_0,i2.RenderType_HeaderComponent)),
       i1.ɵdid(49152,(null as any),0,i3.HeaderComponent,([] as any[]),(null as any),
           (null as any)),(_l()(),i1.ɵted((null as any),['\n'])),(_l()(),i1.ɵeld(0,
-          (null as any),(null as any),4,'div',[['class','container1']],(null as any),
+          (null as any),(null as any),7,'div',[['class','container1']],(null as any),
           (null as any),(null as any),(null as any),(null as any))),(_l()(),i1.ɵted((null as any),
-          ['\n  '])),(_l()(),i1.ɵeld(0,(null as any),(null as any),1,'app-stock',([] as any[]),
-          (null as any),(null as any),(null as any),i4.View_StockComponent_0,i4.RenderType_StockComponent)),
-      i1.ɵdid(114688,(null as any),0,i5.StockComponent,[i6.StockService],(null as any),
-          (null as any)),(_l()(),i1.ɵted((null as any),['\n'])),(_l()(),i1.ɵted((null as any),
+          ['\n  '])),(_l()(),i1.ɵeld(0,(null as any),(null as any),4,'div',[['class',
+          'push']],(null as any),(null as any),(null as any),(null as any),(null as any))),
+      (_l()(),i1.ɵted((null as any),['\n    '])),(_l()(),i1.ɵeld(0,(null as any),(null as any),
+          1,'app-stock',([] as any[]),(null as any),(null as any),(null as any),i4.View_StockComponent_0,
+          i4.RenderType_StockComponent)),i1.ɵdid(114688,(null as any),0,i5.StockComponent,
+          [i6.StockService],(null as any),(null as any)),(_l()(),i1.ɵted((null as any),
+          ['    \n  '])),(_l()(),i1.ɵted((null as any),['\n'])),(_l()(),i1.ɵted((null as any),
           ['\n'])),(_l()(),i1.ɵeld(0,(null as any),(null as any),1,'app-error',([] as any[]),
           (null as any),(null as any),(null as any),i7.View_ErrorComponent_0,i7.RenderType_ErrorComponent)),
       i1.ɵdid(114688,(null as any),0,i8.ErrorComponent,[i9.ErrorService],(null as any),
-          (null as any)),(_l()(),i1.ɵted((null as any),['\n']))],(_ck,_v) => {
-    _ck(_v,6,0);
-    _ck(_v,10,0);
+          (null as any)),(_l()(),i1.ɵted((null as any),['\n'])),(_l()(),i1.ɵeld(0,
+          (null as any),(null as any),10,'footer',([] as any[]),(null as any),(null as any),
+          (null as any),(null as any),(null as any))),(_l()(),i1.ɵted((null as any),
+          ['\n '])),(_l()(),i1.ɵeld(0,(null as any),(null as any),7,'div',[['class',
+          'container']],(null as any),(null as any),(null as any),(null as any),(null as any))),
+      (_l()(),i1.ɵted((null as any),['\n   '])),(_l()(),i1.ɵeld(0,(null as any),(null as any),
+          4,'p',([] as any[]),(null as any),(null as any),(null as any),(null as any),
+          (null as any))),(_l()(),i1.ɵted((null as any),['\n     '])),(_l()(),i1.ɵeld(0,
+          (null as any),(null as any),1,'a',[['href','https://github.com/nategthomas/StockView']],
+          (null as any),(null as any),(null as any),(null as any),(null as any))),
+      (_l()(),i1.ɵted((null as any),['@nategthomas'])),(_l()(),i1.ɵted((null as any),
+          ['\n\n   '])),(_l()(),i1.ɵted((null as any),['\n\n '])),(_l()(),i1.ɵted((null as any),
+          ['\n\n\n'])),(_l()(),i1.ɵted((null as any),['\n']))],(_ck,_v) => {
+    _ck(_v,8,0);
+    _ck(_v,13,0);
   },(null as any));
 }
 export function View_AppComponent_Host_0(_l:any):i1.ɵViewDefinition {
@@ -47,4 +62,4 @@ export function View_AppComponent_Host_0(_l:any):i1.ɵViewDefinition {
 }
 export const AppComponentNgFactory:i1.ComponentFactory<i10.AppComponent> = i1.ɵccf('my-app',
     i10.AppComponent,View_AppComponent_Host_0,{},{},([] as any[]));
-//# sourceMappingURL=data:application/json;base64,eyJmaWxlIjoiQzovVXNlcnMvbmd0aG8vRG9jdW1lbnRzL0phdmFTY3JpcHQvU3RvY2tfYXBwL2Fzc2V0cy9hcHAvYXBwLmNvbXBvbmVudC5uZ2ZhY3RvcnkudHMiLCJ2ZXJzaW9uIjozLCJzb3VyY2VSb290IjoiIiwic291cmNlcyI6WyJuZzovLy9DOi9Vc2Vycy9uZ3Roby9Eb2N1bWVudHMvSmF2YVNjcmlwdC9TdG9ja19hcHAvYXNzZXRzL2FwcC9hcHAuY29tcG9uZW50LnRzIiwibmc6Ly8vQzovVXNlcnMvbmd0aG8vRG9jdW1lbnRzL0phdmFTY3JpcHQvU3RvY2tfYXBwL2Fzc2V0cy9hcHAvYXBwLmNvbXBvbmVudC5odG1sIiwibmc6Ly8vQzovVXNlcnMvbmd0aG8vRG9jdW1lbnRzL0phdmFTY3JpcHQvU3RvY2tfYXBwL2Fzc2V0cy9hcHAvYXBwLmNvbXBvbmVudC50cy5BcHBDb21wb25lbnRfSG9zdC5odG1sIl0sInNvdXJjZXNDb250ZW50IjpbIiAiLCI8YXBwLWhlYWRlcj48L2FwcC1oZWFkZXI+XHJcbjxkaXYgY2xhc3M9XCJjb250YWluZXIxXCI+XHJcbiAgPGFwcC1zdG9jaz48L2FwcC1zdG9jaz5cclxuPC9kaXY+XHJcbjxhcHAtZXJyb3I+PC9hcHAtZXJyb3I+XHJcbiIsIjxteS1hcHA+PC9teS1hcHA+Il0sIm1hcHBpbmdzIjoiQUFBQTs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7b0JDQUE7TUFBQTthQUFBO1VBQUEsZUFBeUIsdUNBQ3pCO1VBQUE7VUFBQSwwREFBd0I7VUFBQSxXQUN0QjtVQUFBO2FBQUE7VUFBQSxlQUF1Qix1Q0FDbkI7VUFBQSxTQUNOO1VBQUE7YUFBQTtVQUFBLGVBQXVCO0lBRnJCO0lBRUY7Ozs7b0JDSkE7TUFBQTthQUFBOzs7OyJ9
+//# sourceMappingURL=data:application/json;base64,eyJmaWxlIjoiQzovVXNlcnMvbmd0aG8vRG9jdW1lbnRzL0phdmFTY3JpcHQvU3RvY2tfYXBwL2Fzc2V0cy9hcHAvYXBwLmNvbXBvbmVudC5uZ2ZhY3RvcnkudHMiLCJ2ZXJzaW9uIjozLCJzb3VyY2VSb290IjoiIiwic291cmNlcyI6WyJuZzovLy9DOi9Vc2Vycy9uZ3Roby9Eb2N1bWVudHMvSmF2YVNjcmlwdC9TdG9ja19hcHAvYXNzZXRzL2FwcC9hcHAuY29tcG9uZW50LnRzIiwibmc6Ly8vQzovVXNlcnMvbmd0aG8vRG9jdW1lbnRzL0phdmFTY3JpcHQvU3RvY2tfYXBwL2Fzc2V0cy9hcHAvYXBwLmNvbXBvbmVudC5odG1sIiwibmc6Ly8vQzovVXNlcnMvbmd0aG8vRG9jdW1lbnRzL0phdmFTY3JpcHQvU3RvY2tfYXBwL2Fzc2V0cy9hcHAvYXBwLmNvbXBvbmVudC50cy5BcHBDb21wb25lbnRfSG9zdC5odG1sIl0sInNvdXJjZXNDb250ZW50IjpbIiAiLCI8YXBwLWhlYWRlcj48L2FwcC1oZWFkZXI+XHJcbjxkaXYgY2xhc3M9XCJjb250YWluZXIxXCI+XHJcbiAgPGRpdiBjbGFzcz1cInB1c2hcIj5cclxuICAgIDxhcHAtc3RvY2s+PC9hcHAtc3RvY2s+ICAgIFxyXG4gIDwvZGl2PlxyXG48L2Rpdj5cclxuPGFwcC1lcnJvcj48L2FwcC1lcnJvcj5cclxuPGZvb3Rlcj5cclxuIDxkaXYgY2xhc3M9XCJjb250YWluZXJcIj5cclxuICAgPHA+XHJcbiAgICAgPGEgaHJlZj1cImh0dHBzOi8vZ2l0aHViLmNvbS9uYXRlZ3Rob21hcy9TdG9ja1ZpZXdcIj5AbmF0ZWd0aG9tYXM8L2E+XHJcblxyXG4gICA8L3A+XHJcblxyXG4gPC9kaXY+XHJcblxyXG5cclxuPC9mb290ZXI+XHJcbiIsIjxteS1hcHA+PC9teS1hcHA+Il0sIm1hcHBpbmdzIjoiQUFBQTs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7b0JDQUE7TUFBQTthQUFBO1VBQUEsZUFBeUIsdUNBQ3pCO1VBQUE7VUFBQSwwREFBd0I7VUFBQSxXQUN0QjtVQUFBO01BQWtCLDJDQUNoQjtVQUFBO3NDQUFBLFVBQUE7VUFBQSwrQ0FBdUI7VUFBQSxlQUNuQix1Q0FDRjtVQUFBLFNBQ047VUFBQTthQUFBO1VBQUEsZUFBdUIsdUNBQ3ZCO1VBQUE7VUFBQSw0Q0FBUTtVQUFBLFVBQ1A7VUFBQTtNQUF1QiwwQ0FDckI7VUFBQTtVQUFBLGdCQUFHLDRDQUNEO1VBQUE7VUFBQTtNQUFtRCxpREFBZ0I7VUFBQSxjQUVqRSwwQ0FFQTtVQUFBLGFBR0U7SUFkTDtJQUdKOzs7O29CQ05BO01BQUE7YUFBQTs7OzsifQ==

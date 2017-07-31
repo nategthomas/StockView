@@ -1,6 +1,6 @@
 .box {
   box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 6px, rgba(0, 0, 0, 0.12) 0px 1px 4px;
-  min-width: 190px;
+  min-width: 225px;
   padding: 0px;
   margin: 15px;
 }
@@ -8,7 +8,7 @@
 #head {
   display: inline-block;
   width: 100%;
-  background-color: #e7e7e7;
+  background-color: #FFE4C4;
   float: left;
 
 }
@@ -29,7 +29,7 @@ span {
   position: absolute;
   right: 7px;
   text-decoration: none;
-  text-shadow: 0 1px 0 #fff;
+  /*text-shadow: 0 1px 0 #fff;*/
   top: 7px;
 }
 
