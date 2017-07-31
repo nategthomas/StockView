@@ -1,5 +1,6 @@
 import { Component, OnInit, Input} from '@angular/core';
 import {FormGroup, FormControl, Validators} from "@angular/forms";
+import * as io from "socket.io-client";
 
 import {StockService} from "../stock.service";
 import {Stock} from "../stock.model";
@@ -14,14 +15,14 @@ import {Stock} from "../stock.model";
 export class TagComponent {
   constructor(private stockService: StockService) {}
 
+  socket = io('http://localhost:4000');
   @Input() stock: Stock;
 
   deleteStock() {
     this.stockService.removeStock(this.stock)
-    .subscribe((stock: any) => {
-      console.log(stock)
+    .subscribe((stock: Stock) => {
+      this.socket.emit('delete-send', stock);
     })
-    this.stockService.deletedStock(this.stock)
   }
 
 }

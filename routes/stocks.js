@@ -21,6 +21,16 @@ io.on('connection', function (socket) {
   });
 });
 
+io.on('connection', function (socket) {
+  console.log('User connected2');
+  socket.on('disconnect', function() {
+    console.log('User disconnected2');
+  });
+  socket.on('delete-send', function(deleted) {
+    console.log(deleted);
+    io.emit('delete-receive', {message: deleted});
+  });
+});
 
 
 router.get('/', function(req, res) {

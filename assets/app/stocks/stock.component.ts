@@ -43,10 +43,35 @@ export class StockComponent implements OnInit {
   ngOnInit() {
     this.stockService.getStocks()
     .subscribe((stocks: Stock[]) => {
-      this.stocks = stocks;
+      this.stocks = stocks.reverse();
     })
     this.socket.on('new-stock', (data) => {
-      this.stocks.unshift(data);
+      var socketdata = data.message;
+      var newStock = new Stock(socketdata.name,
+                            socketdata.data,
+                            socketdata.start_date,
+                            socketdata.end_date,
+                            socketdata.desc,
+                            socketdata.id,
+                            socketdata.today)
+      this.stocks.unshift(newStock);
+      console.log(this.stocks)
+    })
+    this.socket.on('delete-receive', (data) => {
+      var socketdelete = data.message;
+      var deletedStock = new Stock(socketdelete.name,
+                            socketdelete.data,
+                            socketdelete.start_date,
+                            socketdelete.end_date,
+                            socketdelete.desc,
+                            socketdelete.id,
+                            socketdelete.today)
+      var nameArr: Array<string> = [];
+      this.stocks.forEach((stock) => {
+        nameArr.push(stock.name)
+      })
+      var it = nameArr.indexOf(deletedStock.name)
+      this.stocks.splice(it, 1);
     })
   }
 
@@ -56,8 +81,6 @@ export class StockComponent implements OnInit {
     .subscribe((stock: Stock) => {
       this.stockService.addStock(stock)
       .subscribe((addedStock: Stock) => {
-        // this.stocks.unshift(addedStock);
-        // this.stockService.emitStock(addedStock);
         this.socket.emit('save-stock', addedStock);
       })
     })

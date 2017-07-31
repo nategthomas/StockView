@@ -2,6 +2,7 @@ import { Component, OnInit, Input, AfterViewInit, OnDestroy, ViewChild, ElementR
 import {FormGroup, FormControl, Validators} from "@angular/forms";
 import { HttpModule, Http } from '@angular/http';
 import { BrowserModule } from '@angular/platform-browser';
+import * as io from "socket.io-client";
 
 import {StockService} from "../stock.service";
 import {Stock} from "../stock.model";
@@ -21,6 +22,7 @@ export class ChartyComponent implements AfterViewInit {
   constructor(private stockService: StockService) {
   }
 
+  socket = io('http://localhost:4000');
   @ViewChild('chart') public chartEl: ElementRef;
   private _chart: any;
 
@@ -57,22 +59,18 @@ export class ChartyComponent implements AfterViewInit {
         }
       }
       this._chart = new Highcharts.StockChart(options);
-      this.stockService.newStockAdded
-      .subscribe(
-        (stock: Stock) => {
-          this._chart.addSeries({
-            id: stock.name,
-            name: stock.name,
-            data: stock.data
-          });
-        }
-      )
-      this.stockService.StockRemoved
-      .subscribe(
-        (stock: Stock) => {
-          this._chart.get(stock.name).remove();
-        }
-      )
+      this.socket.on('new-stock', (data)=> {
+        var socketdata = data.message;
+        this._chart.addSeries({
+          id: socketdata.name,
+          name: socketdata.name,
+          data: socketdata.data
+        })
+      })
+      this.socket.on('delete-receive', (data) => {
+        var socketdelete = data.message;
+        this._chart.get(socketdelete.name).remove();
+      })
       })
 
 
