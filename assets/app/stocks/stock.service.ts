@@ -15,13 +15,18 @@ import {Stock} from "./stock.model";
 @Injectable()
 export class StockService {
 
+  private urla: string = 'http://localhost:3000';
+  private urlb: string = 'https://stock-view-.herokuapp.com';
+
   constructor(private http: Http, private errorService: ErrorService) {
   }
-  socket = io('http://localhost:4000');
+  socket = io(this.urlb);
 
 
   getStock(theStock) {
-    var apiKey = process.env.API_KEY;
+    var config = new Config();
+    var apiKey = config.API_KEY;
+    console.log(apiKey)
     const startDate = moment().subtract(1, 'year').format('YYYY-MM-DD');
     const endDate = moment().format('YYYY-MM-DD');
     return this.http.get('https://www.quandl.com/api/v3/datasets/WIKI/' + theStock + '.json?api_key=' + apiKey + '&start_date=' + startDate + '&end_date=' + endDate)
@@ -39,7 +44,7 @@ export class StockService {
   }
 
   getStocks() {
-    return this.http.get('http://localhost:3000/stocks')
+    return this.http.get(this.urlb + '/stocks')
     .map((response: Response) => {
       var stocks = response.json().obj;
       let Stocks: Stock[] = [];
@@ -62,7 +67,7 @@ export class StockService {
   }
 
   _getStocks() {
-    return this.http.get('http://localhost:3000/stocks')
+    return this.http.get(this.urlb + '/stocks')
     .map((response: Response) => {
       var stocks = response.json().obj;
       let Stocks: Stock[] = [];
@@ -92,7 +97,7 @@ export class StockService {
     stock.data.reverse();
     const body = JSON.stringify(stock);
     const headers = new Headers({'Content-Type': "application/json"})
-    return this.http.post('http://localhost:3000/stocks', body, {headers: headers})
+    return this.http.post(this.urlb + '/stocks', body, {headers: headers})
     .map((response: Response) => {
       let thisstock = response.json().obj;
       var stock = new Stock(thisstock.name,
@@ -113,7 +118,7 @@ export class StockService {
 
   removeStock(stock: Stock) {
     var id = stock.id;
-    return this.http.delete('http://localhost:3000/stocks/' + id)
+    return this.http.delete(this.urlb + '/stocks/' + id)
     .map((response: Response) => {
       var deletedStock = response.json().obj;
       var deleted = new Stock(deletedStock.name,

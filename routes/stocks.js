@@ -7,7 +7,7 @@ var io = require('socket.io')(server);
 var Stock = require('../models/stock');
 
 
-server.listen(4000);
+server.listen(process.env.PORT || 4000);
 
 // socket io
 io.on('connection', function (socket) {
