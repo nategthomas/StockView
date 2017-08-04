@@ -17,6 +17,8 @@ export class StockService {
 
   private urla: string = 'http://localhost:3000';
   private urlb: string = 'https://stock-view-.herokuapp.com';
+  private urlc: string = 'http://localhost:4000';
+
 
   constructor(private http: Http, private errorService: ErrorService) {
   }
@@ -26,7 +28,6 @@ export class StockService {
   getStock(theStock) {
     var config = new Config();
     var apiKey = config.API_KEY;
-    console.log(apiKey)
     const startDate = moment().subtract(1, 'year').format('YYYY-MM-DD');
     const endDate = moment().format('YYYY-MM-DD');
     return this.http.get('https://www.quandl.com/api/v3/datasets/WIKI/' + theStock + '.json?api_key=' + apiKey + '&start_date=' + startDate + '&end_date=' + endDate)

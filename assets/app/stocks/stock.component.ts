@@ -39,8 +39,10 @@ export class StockComponent implements OnInit {
   stocks: Stock[] = [];
   stock: Stock;
   searchValue:string = '';
-  socket = io('http://localhost:4000');
+  private urla: string = 'http://localhost:4000';
+  private urlb: string = 'https://stock-view-.herokuapp.com';
 
+  socket = io(this.urlb);
 
   ngOnInit() {
     this.stockService.getStocks()
@@ -57,7 +59,6 @@ export class StockComponent implements OnInit {
                             socketdata.id,
                             socketdata.today)
       this.stocks.unshift(newStock);
-      console.log(this.stocks)
     })
     this.socket.on('delete-receive', (data) => {
       var socketdelete = data.message;

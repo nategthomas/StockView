@@ -15,7 +15,10 @@ import {Stock} from "../stock.model";
 export class TagComponent {
   constructor(private stockService: StockService) {}
 
-  socket = io('http://localhost:4000');
+  private urla: string = 'http://localhost:4000';
+  private urlb: string = 'https://stock-view-.herokuapp.com';
+
+  socket = io(this.urlb);
   @Input() stock: Stock;
 
   deleteStock() {

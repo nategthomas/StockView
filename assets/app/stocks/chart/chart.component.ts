@@ -22,7 +22,10 @@ export class ChartyComponent implements AfterViewInit {
   constructor(private stockService: StockService) {
   }
 
-  socket = io('http://localhost:4000');
+  private urla: string = 'http://localhost:4000';
+  private urlb: string = 'https://stock-view-.herokuapp.com';
+
+  socket = io(this.urlb);
   @ViewChild('chart') public chartEl: ElementRef;
   private _chart: any;
 

@@ -6,12 +6,38 @@ var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 var mongoose = require('mongoose');
 require('dotenv').config();
+var app = express();
+var server = require('http').createServer(app);
+var io = require('socket.io')(server);
+server.listen(process.env.PORT);
+
+// socket io
+io.on('connection', function (socket) {
+  console.log('User connected');
+  socket.on('disconnect', function() {
+    console.log('User disconnected');
+  });
+  socket.on('save-stock', function (data) {
+    console.log(data);
+    io.emit('new-stock', { message: data });
+  });
+});
+
+io.on('connection', function (socket) {
+  console.log('User connected2');
+  socket.on('disconnect', function() {
+    console.log('User disconnected2');
+  });
+  socket.on('delete-send', function(deleted) {
+    console.log(deleted);
+    io.emit('delete-receive', {message: deleted});
+  });
+});
 
 
 var appRoutes = require('./routes/app');
 var stockRoutes = require('./routes/stocks');
 
-var app = express();
 var user = process.env.USER;
 var password = process.env.PASSWORD;
 
